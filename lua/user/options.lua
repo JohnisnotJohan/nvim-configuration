@@ -87,3 +87,10 @@ augroup filetype_markdown
     autocmd FileType markdown setlocal spelllang=en spell
 augroup END
 ]]
+
+vim.cmd [[
+augroup filetype_gitcommit
+    autocmd!
+    autocmd FileType gitcommit setlocal spelllang=en spell
+augroup END
+]]

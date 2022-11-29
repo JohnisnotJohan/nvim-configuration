@@ -10,7 +10,7 @@ require("user.cmp") -- autocompletion
 require("user.lsp") -- bulitin lsp
 require("user.telescope") -- telescope
 require("user.treesitter") -- treesitter
-require("user.autopairs") -- autopairsnvcode
+require("user.autopairs") -- autopairs
 require("user.comment") -- comments operator
 require("user.nvim-tree") -- file explorer
 require("user.bufferline") -- show buffers in tabline

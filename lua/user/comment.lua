@@ -71,3 +71,10 @@ comment.setup {
     ---Function to call after (un)comment
     post_hook = nil,
 }
+
+
+-- local status_ok_2, ft = pcall(require, "Comment.ft")
+-- if not status_ok_2 then
+--   return
+-- end
+

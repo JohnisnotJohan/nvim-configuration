@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/yuehan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/yuehan/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/yuehan/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -288,6 +293,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yuehan/.local/share/nvim/site/pack/packer/start/session-lens",
     url = "https://github.com/rmagatti/session-lens"
+  },
+  ["sqls.nvim"] = {
+    loaded = true,
+    path = "/home/yuehan/.local/share/nvim/site/pack/packer/start/sqls.nvim",
+    url = "https://github.com/nanotee/sqls.nvim"
   },
   ["symbols-outline.nvim"] = {
     loaded = true,

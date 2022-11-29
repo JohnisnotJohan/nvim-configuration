@@ -47,7 +47,7 @@ return packer.startup( function( use )
 
     -- Colorschemes
     -- use( "lunarvim/colorschemes" ) -- A bunch of colorschemes you can try out
-    use( "ChristianChiarulli/nvcode-color-schemes.vim" )
+    use{ "ChristianChiarulli/nvcode-color-schemes.vim", commit = "3a0e624a67ecd2c7f990bc3c25a1044e85782b10" }
     -- use { "Mofiqul/vscode.nvim", commit = "c5125820a0915ef50f03fae10423c43dc49c66b1" }
     -- use 'LunarVim/Colorschemes'
     -- use "lunarvim/darkplus.nvim"
@@ -99,7 +99,7 @@ return packer.startup( function( use )
     use( "p00f/nvim-ts-rainbow" )
     use( "nvim-treesitter/playground" )
     use( "JoosepAlviste/nvim-ts-context-commentstring" )
-    use( "kyazdani42/nvim-web-devicons" )
+    use{ "kyazdani42/nvim-web-devicons", commit = "3b1b794bc17b7ac3df3ae471f1c18f18d1a0f958" }
 
     -- Autopairs, integrates with both cmp and treesitter
     use( "windwp/nvim-autopairs" )

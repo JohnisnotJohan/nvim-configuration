@@ -131,7 +131,7 @@ keymap( "t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts )
 keymap( "t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts )
 
 -- from terminal to Terminal-normal mode
-keymap( "t", "<A-q>", "<C-\\><C-n>", term_opts )
+-- keymap( "t", "<A-q>", "<C-\\><C-n>", term_opts ) -- set in the toggleterm.lua
 
 -- Operatot --
 -- rightmost and leftmost
@@ -163,3 +163,7 @@ nnoremap <F4> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> t
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 ]]
+
+-- open url under the cursor
+keymap( "n", "gu", '<cmd>lua require("user.functions").open_url_under_cursor()<CR>', opts )
+keymap( "n", "gU", '<cmd>lua require("user.functions").open_url_under_cursor_prefix_github()<CR>', opts )

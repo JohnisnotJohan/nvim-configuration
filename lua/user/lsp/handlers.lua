@@ -106,6 +106,9 @@ M.on_attach = function( client, bufnr )
         -- require'illuminate'.on_attach( client )
     end
 
+    if client.name == "marksman" then
+        client.server_capabilities.documentFormattingProvider = false -- Nvim 8.
+    end
     lsp_keymaps( bufnr )
 end
 

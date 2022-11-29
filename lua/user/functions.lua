@@ -138,4 +138,21 @@ end
     vim.cmd "SaveSession"
 end ]]
 
+function M.open_url_under_cursor()
+    local filename = vim.fn.expand('<cWORD>')
+    local filename_without_left_bracket = vim.fn.substitute(filename, ".*(", "", "g")
+    local filename_without_bracket = vim.fn.substitute(filename_without_left_bracket, ").*", "", "g")
+    local filename_escape = vim.fn.fnameescape(filename_without_bracket)
+    vim.cmd(":silent !firefox " .. filename_escape)
+end
+
+function M.open_url_under_cursor_prefix_github()
+    local filename = vim.fn.expand('<cWORD>')
+    local filename_without_left_bracket = vim.fn.substitute(filename, ".*(", "", "g")
+    local filename_without_bracket = vim.fn.substitute(filename_without_left_bracket, ").*", "", "g")
+    local partial_url_ = vim.fn.substitute(filename_without_bracket, "'", "" ,"g")
+    local partial_url = vim.fn.substitute(partial_url_, "\"", "" ,"g")
+    vim.cmd(":silent !firefox " .. "www.github.com/" .. partial_url)
+end
+
 return M

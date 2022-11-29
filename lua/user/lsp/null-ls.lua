@@ -32,6 +32,10 @@ null_ls.setup( {
                 "--spaces-inside-table-braces",
             },
         } ),
+        -- formatting.markdownlint.with( {
+        --     filetypes = { "markdown" },
+        --     extra_args = { "--stdin", "--enable MD007" },
+        -- } ), -- markdown formattor
         formatting.sqlfluff.with( {
             filetypes = { "sql", "mysql", "pgsql" },
             extra_args = { "--dialect", "postgres" },
@@ -52,9 +56,14 @@ null_ls.setup( {
             },
         } ),
         formatting.prettier.with( {
-            extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+            extra_args = {
+                "--tab-width=4",
+                "--no-semi",
+                "--single-quote",
+                "--jsx-single-quote",
+            },
         } ),
-        formatting.black.with( { extra_args = { "--fast" } } ),
+        -- formatting.black.with( { extra_args = { "--fast" } } ),
         -- diagnostics.flake8
     },
 } )
